@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/imagenes">
+        <file>imagenes/paloma (2).png</file>
+        <file>imagenes/iniciar-sesion.png</file>
+        <file>imagenes/registrarse.png</file>
+        <file>imagenes/hombre (4).png</file>
+        <file>imagenes/amistad.png</file>
+        <file>imagenes/notas.png</file>
+        <file>imagenes/ujier (1).png</file>
+        <file>imagenes/charla.png</file>
+        <file>imagenes/paloma (5).png</file>
+        <file>imagenes/mobile.png</file>
+        <file>imagenes/portada.png</file>
+        <file>imagenes/perfil2.jpg</file>
+        <file>imagenes/portada 2.jpg</file>
+        <file>imagenes/vecteezy_woman-finger-pointing-on-computer-with-business-doodle-icons-on-screen_1384456.jpg</file>
+        <file>imagenes/perfil3.jpg</file>
+        <file>imagenes/tendencia.jpg</file>
+    </qresource>
+</RCC>

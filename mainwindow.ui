@@ -1,0 +1,3225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1085</width>
+    <height>754</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Twetler</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="imagenes.qrc">
+    <normaloff>:/imagenes/imagenes/paloma (5).png</normaloff>:/imagenes/imagenes/paloma (5).png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <property name="dockNestingEnabled">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>1021</width>
+      <height>681</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QLabel{
+ color: white;
+};
+background-color: rgb(51, 51, 51);</string>
+    </property>
+    <property name="currentIndex">
+     <number>3</number>
+    </property>
+    <widget class="QWidget" name="page_4">
+     <widget class="QFrame" name="frame">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>150</y>
+        <width>371</width>
+        <height>401</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QFrame{
+  border:2px solid gray;
+color:white;
+background:#15202B;
+ padding: white;
+border-radius:10px;
+selection-background-color: rgb(123, 126, 126);
+}
+</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="label_17">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>310</y>
+         <width>32</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="imagenes.qrc">:/imagenes/imagenes/registrarse.png</pixmap>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_16">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>260</y>
+         <width>32</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="imagenes.qrc">:/imagenes/imagenes/iniciar-sesion.png</pixmap>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="BRegistrarse">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>320</y>
+         <width>101</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+ border:2px solid rgb(208, 208, 208);
+color:white;
+background:#333;
+border-radius:10px;
+}
+QPushButton:hover{
+color:#333;
+border-radius:9px;
+background:white;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>REGISTRARSE</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="BLogin">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>270</y>
+         <width>101</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+ border:2px solid rgb(208, 208, 208);
+color:white;
+background:#333;
+border-radius:10px;
+}
+QPushButton:hover{
+color:#333;
+border-radius:9px;
+background:white;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>LOGIN</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="LEContrase">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>220</y>
+         <width>211</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit{ 
+  border:2px solid gray;
+ border-radius: 10px;
+ padding: white;
+background: white;
+selection-background-color: darkgray;
+}</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_13">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>223</y>
+         <width>81</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(208, 208, 208);</string>
+       </property>
+       <property name="text">
+        <string>PASSWORD:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="LEUsuario">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>170</y>
+         <width>211</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit{ 
+  border:2px solid gray;
+ border-radius: 10px;
+ padding: white;
+background: white;
+selection-background-color: darkgray;
+}</string>
+       </property>
+       <property name="cursorPosition">
+        <number>0</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_12">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>170</y>
+         <width>81</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:rgb(208, 208, 208);</string>
+       </property>
+       <property name="text">
+        <string>USUARIO :              </string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_14">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>20</y>
+         <width>128</width>
+         <height>128</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="imagenes.qrc">:/imagenes/imagenes/paloma (2).png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>140</y>
+        <width>291</width>
+        <height>411</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="imagenes.qrc">:/imagenes/imagenes/mobile.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page">
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>220</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Nombre</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>260</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Correo</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>300</y>
+        <width>51</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Password</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>340</y>
+        <width>51</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Numero</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="LENombre">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>220</y>
+        <width>191</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit{ 
+  border:2px solid gray;
+ border-radius: 10px;
+ padding: white;
+background: white;
+selection-background-color: darkgray;
+}</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="LECorreo">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>260</y>
+        <width>191</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit{ 
+  border:2px solid gray;
+ border-radius: 10px;
+ padding: white;
+background: white;
+selection-background-color: darkgray;
+}</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="LEPassword">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>300</y>
+        <width>191</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit{ 
+  border:2px solid gray;
+ border-radius: 10px;
+ padding: white;
+background: white;
+selection-background-color: darkgray;
+}</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="LENumero">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>340</y>
+        <width>191</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit{ 
+  border:2px solid gray;
+ border-radius: 10px;
+ padding: white;
+background: white;
+selection-background-color: darkgray;
+}</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>140</y>
+        <width>251</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>18</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>REGISTRO</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BRegistrar">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>390</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+ border:2px solid rgb(208, 208, 208);
+color:white;
+background:#333;
+border-radius:10px;
+}
+QPushButton:hover{
+color:#333;
+border-radius:9px;
+background:white;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>REGISTRAR</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BCancelar">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>430</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+ border:2px solid rgb(208, 208, 208);
+color:white;
+background:#333;
+border-radius:10px;
+}
+QPushButton:hover{
+color:#333;
+border-radius:9px;
+background:white;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>CANCELAR</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_18">
+      <property name="geometry">
+       <rect>
+        <x>587</x>
+        <y>147</y>
+        <width>171</width>
+        <height>271</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>18</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="imagenes.qrc">:/imagenes/imagenes/hombre (4).png</pixmap>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_3">
+     <widget class="QPushButton" name="Bcontinuar">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>270</y>
+        <width>121</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>MV Boli</family>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+ border:2px solid rgb(208, 208, 208);
+color:white;
+background:#333;
+border-radius:10px;
+}
+QPushButton:hover{
+color:#333;
+border-radius:9px;
+background:white;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Continuar</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_21">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>90</y>
+        <width>441</width>
+        <height>301</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="imagenes.qrc">:/imagenes/imagenes/ujier (1).png</pixmap>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>70</y>
+        <width>1011</width>
+        <height>581</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QLabel" name="LBnombre">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>460</y>
+         <width>91</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>13</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>dassa</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="LBcorreo">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>490</y>
+         <width>111</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Comic Sans MS</family>
+         <pointsize>7</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>_____________</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="LBnumero">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>510</y>
+         <width>91</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>________________</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_22">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>270</y>
+         <width>171</width>
+         <height>141</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="imagenes.qrc">:/imagenes/imagenes/charla.png</pixmap>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="BTNINICIO">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>111</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Poppins</family>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+ border:0px solid rgb(208, 208, 208);
+color:white;
+background:#333;
+border-radius:10px;
+}
+QPushButton:hover{
+color:#333;
+border-radius:20px;
+background:white;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Inicio</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="BTNPERFIL1">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>60</y>
+         <width>111</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Poppins</family>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+ border:0px solid rgb(208, 208, 208);
+color:white;
+background:#333;
+border-radius:10px;
+}
+QPushButton:hover{
+color:#333;
+border-radius:20px;
+background:white;
+}</string>
+       </property>
+       <property name="text">
+        <string>Perfil</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="BTNPublicaciones1">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>110</y>
+         <width>111</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Poppins</family>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+ border:0px solid rgb(208, 208, 208);
+color:white;
+background:#333;
+border-radius:10px;
+}
+QPushButton:hover{
+color:#333;
+border-radius:20px;
+background:white;
+}</string>
+       </property>
+       <property name="text">
+        <string>Tendencias</string>
+       </property>
+      </widget>
+      <widget class="QStackedWidget" name="SWmostrar">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>0</y>
+         <width>871</width>
+         <height>581</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(47, 47, 47);</string>
+       </property>
+       <property name="currentIndex">
+        <number>1</number>
+       </property>
+       <widget class="QWidget" name="Inicio">
+        <widget class="QLabel" name="label_8">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>30</y>
+           <width>51</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>Publicar:</string>
+         </property>
+        </widget>
+        <widget class="QTextEdit" name="TXEanuncios">
+         <property name="geometry">
+          <rect>
+           <x>80</x>
+           <y>20</y>
+           <width>231</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+QTextEdit{
+  border:2px solid gray;
+color:white;
+background:#333;
+ padding: white;
+border-radius:10px;
+selection-background-color: darkgray;
+}
+</string>
+         </property>
+         <property name="html">
+          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="Bfechaamigo">
+         <property name="geometry">
+          <rect>
+           <x>780</x>
+           <y>530</y>
+           <width>75</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+ border:2px solid rgb(208, 208, 208);
+color:white;
+background:#333;
+border-radius:10px;
+}
+QPushButton:hover{
+color:#333;
+border-radius:9px;
+background:white;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Fecha</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="numfechaBTN">
+         <property name="geometry">
+          <rect>
+           <x>360</x>
+           <y>80</y>
+           <width>61</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+ border:2px solid rgb(208, 208, 208);
+color:white;
+background:#333;
+border-radius:10px;
+}
+QPushButton:hover{
+color:#333;
+border-radius:9px;
+background:white;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Fecha</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="LEbusqueda_Titulo">
+         <property name="geometry">
+          <rect>
+           <x>100</x>
+           <y>100</y>
+           <width>211</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Poppins</family>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color:white;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="Bafabetamigo">
+         <property name="geometry">
+          <rect>
+           <x>690</x>
+           <y>530</y>
+           <width>75</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+ border:2px solid rgb(208, 208, 208);
+color:white;
+background:#333;
+border-radius:10px;
+}
+QPushButton:hover{
+color:#333;
+border-radius:9px;
+background:white;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>A-Z</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_19">
+         <property name="geometry">
+          <rect>
+           <x>430</x>
+           <y>20</y>
+           <width>32</width>
+           <height>32</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="imagenes.qrc">:/imagenes/imagenes/notas.png</pixmap>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="numlikesBTN">
+         <property name="geometry">
+          <rect>
+           <x>450</x>
+           <y>80</y>
+           <width>61</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+ border:2px solid rgb(208, 208, 208);
+color:white;
+background:#333;
+border-radius:10px;
+}
+QPushButton:hover{
+color:#333;
+border-radius:9px;
+background:white;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>numlikes</string>
+         </property>
+        </widget>
+        <widget class="QStackedWidget" name="stackedWidgetPublic">
+         <property name="geometry">
+          <rect>
+           <x>340</x>
+           <y>120</y>
+           <width>291</width>
+           <height>431</height>
+          </rect>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+  border:2px solid gray;
+color:white;
+background:#555;
+ padding: white;
+border-radius:10px;
+selection-background-color: darkgray;
+
+</string>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="page_7">
+          <widget class="QListWidget" name="LWcomentarios1">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>230</y>
+             <width>271</width>
+             <height>151</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Poppins</family>
+             <pointsize>8</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">
+QListWidget{
+color:white;
+background:#333;
+border-radius:10px;
+}
+</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::Box</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Sunken</enum>
+           </property>
+           <property name="lineWidth">
+            <number>2</number>
+           </property>
+           <property name="midLineWidth">
+            <number>1</number>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="BTNcomentarios1">
+           <property name="geometry">
+            <rect>
+             <x>230</x>
+             <y>400</y>
+             <width>51</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">
+background-color:#181c1f;
+font: 9pt &quot;MS Shell Dlg 2&quot;;
+</string>
+           </property>
+           <property name="text">
+            <string>Agre.</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="BTNpubliclike1">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>200</y>
+             <width>51</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+ border:2px solid rgb(208, 208, 208);
+color:white;
+background:#333;
+border-radius:10px;
+}
+QPushButton:hover{
+color:#333;
+border-radius:9px;
+background:white;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Like</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_26">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>170</y>
+             <width>47</width>
+             <height>13</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:1px;</string>
+           </property>
+           <property name="text">
+            <string>Likes :</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="Labellikespublic">
+           <property name="geometry">
+            <rect>
+             <x>80</x>
+             <y>170</y>
+             <width>47</width>
+             <height>13</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:0px;</string>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_28">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>170</y>
+             <width>47</width>
+             <height>13</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:0px;</string>
+           </property>
+           <property name="text">
+            <string>fecha :</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="labelfechapublic">
+           <property name="geometry">
+            <rect>
+             <x>160</x>
+             <y>170</y>
+             <width>91</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:0px;</string>
+           </property>
+           <property name="text">
+            <string>....</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="TEXTpublicstacked1">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>20</y>
+             <width>231</width>
+             <height>131</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Poppins</family>
+             <pointsize>10</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">
+color:white;
+background:#222;
+ padding: white;
+border:white 10px;
+
+
+
+</string>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QTextEdit" name="textEditcomentario1">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>390</y>
+             <width>201</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="html">
+            <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="BTNcompartir">
+           <property name="geometry">
+            <rect>
+             <x>160</x>
+             <y>200</y>
+             <width>61</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+ border:2px solid rgb(208, 208, 208);
+color:white;
+background:#333;
+border-radius:10px;
+}
+QPushButton:hover{
+color:#333;
+border-radius:9px;
+background:white;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Compartir</string>
+           </property>
+          </widget>
+         </widget>
+        </widget>
+        <widget class="QLabel" name="label_20">
+         <property name="geometry">
+          <rect>
+           <x>750</x>
+           <y>20</y>
+           <width>41</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="imagenes.qrc">:/imagenes/imagenes/amistad.png</pixmap>
+         </property>
+        </widget>
+        <widget class="QListWidget" name="LWanuncios">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>150</y>
+           <width>301</width>
+           <height>401</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>Poppins</family>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+QListWidget{
+color:white;
+background:#222;
+border-radius:10px;
+}
+</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Box</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Sunken</enum>
+         </property>
+         <property name="lineWidth">
+          <number>2</number>
+         </property>
+         <property name="midLineWidth">
+          <number>1</number>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="BPublicar">
+         <property name="geometry">
+          <rect>
+           <x>320</x>
+           <y>20</y>
+           <width>71</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+ border:2px solid rgb(208, 208, 208);
+color:white;
+background:#333;
+border-radius:10px;
+}
+QPushButton:hover{
+color:#333;
+border-radius:10px;
+background:white;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Publicar</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="SGTBTN">
+         <property name="geometry">
+          <rect>
+           <x>530</x>
+           <y>80</y>
+           <width>61</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+ border:2px solid rgb(208, 208, 208);
+color:white;
+background:#333;
+border-radius:10px;
+}
+QPushButton:hover{
+color:#333;
+border-radius:9px;
+background:white;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>SGT</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="Bbuscaramigo">
+         <property name="geometry">
+          <rect>
+           <x>730</x>
+           <y>110</y>
+           <width>75</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+ border:2px solid rgb(208, 208, 208);
+color:white;
+background:#333;
+border-radius:10px;
+}
+QPushButton:hover{
+color:#333;
+border-radius:9px;
+background:white;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Buscar</string>
+         </property>
+        </widget>
+        <widget class="QListWidget" name="LWamigos">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>670</x>
+           <y>150</y>
+           <width>191</width>
+           <height>361</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Poppins</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="autoFillBackground">
+          <bool>true</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QListWidget{
+color:white;
+background:#222;
+border-radius:10px;
+
+}
+
+</string>
+         </property>
+         <property name="sizeAdjustPolicy">
+          <enum>QAbstractScrollArea::AdjustIgnored</enum>
+         </property>
+         <property name="alternatingRowColors">
+          <bool>false</bool>
+         </property>
+         <property name="resizeMode">
+          <enum>QListView::Fixed</enum>
+         </property>
+         <property name="uniformItemSizes">
+          <bool>false</bool>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+         <property name="selectionRectVisible">
+          <bool>false</bool>
+         </property>
+         <property name="sortingEnabled">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_23">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>100</y>
+           <width>75</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+ border:2px solid rgb(208, 208, 208);
+color:white;
+background:#333;
+border-radius:10px;
+}
+QPushButton:hover{
+color:#333;
+border-radius:9px;
+background:white;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>buscar</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="LEbuscarA">
+         <property name="geometry">
+          <rect>
+           <x>680</x>
+           <y>70</y>
+           <width>171</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+QLineEdit{
+  border:2px solid gray;
+color:white;
+background:#333;
+ padding: white;
+border-radius:10px;
+selection-background-color: darkgray;
+}
+</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="Perfil">
+        <widget class="QLabel" name="portadauser">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>10</y>
+           <width>751</width>
+           <height>181</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="imagenes.qrc">:/imagenes/imagenes/portada.png</pixmap>
+         </property>
+        </widget>
+        <widget class="QLabel" name="fotouse">
+         <property name="geometry">
+          <rect>
+           <x>80</x>
+           <y>140</y>
+           <width>191</width>
+           <height>141</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="imagenes.qrc">:/imagenes/imagenes/vecteezy_woman-finger-pointing-on-computer-with-business-doodle-icons-on-screen_1384456.jpg</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QLabel" name="Lnombreuser">
+         <property name="geometry">
+          <rect>
+           <x>290</x>
+           <y>192</y>
+           <width>181</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Poppins</family>
+           <pointsize>14</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+        <widget class="QStackedWidget" name="SWPerfil">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>360</y>
+           <width>551</width>
+           <height>241</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(87, 87, 87);</string>
+         </property>
+         <property name="currentIndex">
+          <number>1</number>
+         </property>
+         <widget class="QWidget" name="page_8">
+          <widget class="QListWidget" name="LWanunciosusuario">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>10</y>
+             <width>471</width>
+             <height>201</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>Poppins</family>
+             <pointsize>12</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">
+QListWidget{
+color:white;
+background:#222;
+border-radius:10px;
+}
+</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::Box</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Sunken</enum>
+           </property>
+           <property name="lineWidth">
+            <number>2</number>
+           </property>
+           <property name="midLineWidth">
+            <number>1</number>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>6</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="page_11">
+          <widget class="QListWidget" name="LWamigosusuario">
+           <property name="geometry">
+            <rect>
+             <x>60</x>
+             <y>10</y>
+             <width>441</width>
+             <height>211</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>Poppins</family>
+             <pointsize>12</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">
+QListWidget{
+color:white;
+background:#222;
+border-radius:10px;
+}
+</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::Box</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Sunken</enum>
+           </property>
+           <property name="lineWidth">
+            <number>2</number>
+           </property>
+           <property name="midLineWidth">
+            <number>1</number>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>6</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </widget>
+        </widget>
+        <widget class="QPushButton" name="BTPublicacionesuser">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>290</y>
+           <width>201</width>
+           <height>61</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Poppins</family>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+ border:0px solid rgb(208, 208, 208);
+color:white;
+background:#333;
+border-radius:10px;
+}
+QPushButton:hover{
+color:#333;
+border-radius:20px;
+background:white;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Publicaciones</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="BTAmigosuser">
+         <property name="geometry">
+          <rect>
+           <x>280</x>
+           <y>290</y>
+           <width>201</width>
+           <height>61</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Poppins</family>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+ border:0px solid rgb(208, 208, 208);
+color:white;
+background:#333;
+border-radius:10px;
+}
+QPushButton:hover{
+color:#333;
+border-radius:20px;
+background:white;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Amigos</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="Lcorreouser">
+         <property name="geometry">
+          <rect>
+           <x>290</x>
+           <y>220</y>
+           <width>251</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Poppins</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_10">
+         <property name="geometry">
+          <rect>
+           <x>650</x>
+           <y>260</y>
+           <width>201</width>
+           <height>301</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="imagenes.qrc">:/imagenes/imagenes/perfil3.jpg</pixmap>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="page_6">
+        <widget class="QTabWidget" name="tabWidget">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>681</width>
+           <height>551</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QTabWidget{
+color:rgb(106, 69, 255);
+background:rgb(87, 87, 255);
+}
+</string>
+         </property>
+         <property name="currentIndex">
+          <number>1</number>
+         </property>
+         <widget class="QWidget" name="tab_2">
+          <attribute name="title">
+           <string>Relevantes</string>
+          </attribute>
+          <widget class="QListWidget" name="LWanunciosPag">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>130</y>
+             <width>281</width>
+             <height>371</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Poppins</family>
+             <pointsize>12</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">
+QListWidget{
+color:white;
+background:#9c9c9c;
+border-radius:10px;
+}
+</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::Box</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Sunken</enum>
+           </property>
+           <property name="lineWidth">
+            <number>2</number>
+           </property>
+           <property name="midLineWidth">
+            <number>1</number>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton_2">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>70</y>
+             <width>41</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+ border:2px solid rgb(208, 208, 208);
+color:white;
+background:#333;
+border-radius:10px;
+}
+QPushButton:hover{
+color:#333;
+border-radius:10px;
+background:white;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Buscar</string>
+           </property>
+          </widget>
+          <widget class="QStackedWidget" name="stackedWidgetPublic_2">
+           <property name="geometry">
+            <rect>
+             <x>360</x>
+             <y>70</y>
+             <width>291</width>
+             <height>431</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">
+color:white;
+background-color:#7f7f7f;
+border-radius:10px;
+
+</string>
+           </property>
+           <property name="currentIndex">
+            <number>0</number>
+           </property>
+           <widget class="QWidget" name="page_9">
+            <widget class="QListWidget" name="LWcomentarios1_2">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>230</y>
+               <width>251</width>
+               <height>151</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>8</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">
+QListWidget{
+color:white;
+background:#333;
+border-radius:10px;
+}
+</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Sunken</enum>
+             </property>
+             <property name="lineWidth">
+              <number>2</number>
+             </property>
+             <property name="midLineWidth">
+              <number>1</number>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="BTNComent_Relevantes">
+             <property name="geometry">
+              <rect>
+               <x>230</x>
+               <y>390</y>
+               <width>51</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+ border:2px solid rgb(208, 208, 208);
+color:white;
+background:#333;
+border-radius:10px;
+}
+QPushButton:hover{
+color:#333;
+border-radius:10px;
+background:white;
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Agre.</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="TEXTpublicstacked1_2">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>30</y>
+               <width>251</width>
+               <height>131</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color:#3a677c;</string>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="BTNpubliclike1_2">
+             <property name="geometry">
+              <rect>
+               <x>110</x>
+               <y>200</y>
+               <width>51</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">
+background-color:#181c1f;
+font: 9pt &quot;MS Shell Dlg 2&quot;;
+</string>
+             </property>
+             <property name="text">
+              <string>Like</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_27">
+             <property name="geometry">
+              <rect>
+               <x>40</x>
+               <y>170</y>
+               <width>47</width>
+               <height>13</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Likes :</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="Labellikespublic_2">
+             <property name="geometry">
+              <rect>
+               <x>80</x>
+               <y>170</y>
+               <width>47</width>
+               <height>13</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>...</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_29">
+             <property name="geometry">
+              <rect>
+               <x>140</x>
+               <y>170</y>
+               <width>47</width>
+               <height>13</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>fecha :</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="labelfechapublic_2">
+             <property name="geometry">
+              <rect>
+               <x>190</x>
+               <y>170</y>
+               <width>81</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>....</string>
+             </property>
+            </widget>
+            <widget class="QTextEdit" name="textEditComentario2">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>390</y>
+               <width>201</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color:#262626;</string>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QWidget" name="page_10"/>
+          </widget>
+          <widget class="QLineEdit" name="LEbuscar_Relevantes">
+           <property name="geometry">
+            <rect>
+             <x>80</x>
+             <y>70</y>
+             <width>231</width>
+             <height>20</height>
+            </rect>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="tab">
+          <attribute name="title">
+           <string>Populares</string>
+          </attribute>
+          <widget class="QListWidget" name="LWanuncios_popular">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>130</y>
+             <width>281</width>
+             <height>371</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Poppins</family>
+             <pointsize>12</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">
+QListWidget{
+color:white;
+background:#9c9c9c;
+border-radius:10px;
+}
+</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::Box</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Sunken</enum>
+           </property>
+           <property name="lineWidth">
+            <number>2</number>
+           </property>
+           <property name="midLineWidth">
+            <number>1</number>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>60</y>
+             <width>41</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Buscar</string>
+           </property>
+          </widget>
+          <widget class="QStackedWidget" name="stackedWidgetPublic_5">
+           <property name="geometry">
+            <rect>
+             <x>360</x>
+             <y>70</y>
+             <width>291</width>
+             <height>431</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">
+color:white;
+background-color:#7f7f7f;
+border-radius:10px;
+
+</string>
+           </property>
+           <property name="currentIndex">
+            <number>0</number>
+           </property>
+           <widget class="QWidget" name="page_16">
+            <widget class="QListWidget" name="LWcomentariosPopular">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>230</y>
+               <width>231</width>
+               <height>151</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>8</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">
+QListWidget{
+color:white;
+background:#333;
+border-radius:10px;
+}
+</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Sunken</enum>
+             </property>
+             <property name="lineWidth">
+              <number>2</number>
+             </property>
+             <property name="midLineWidth">
+              <number>1</number>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="BTNcomentarPopular">
+             <property name="geometry">
+              <rect>
+               <x>200</x>
+               <y>400</y>
+               <width>51</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">
+background-color:#181c1f;
+font: 9pt &quot;MS Shell Dlg 2&quot;;
+</string>
+             </property>
+             <property name="text">
+              <string>Agre.</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="TEXTpublicstacked1_popular">
+             <property name="geometry">
+              <rect>
+               <x>30</x>
+               <y>30</y>
+               <width>231</width>
+               <height>131</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Poppins</family>
+               <pointsize>10</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color:#3a677c;</string>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="BTNpubliclike1_popular">
+             <property name="geometry">
+              <rect>
+               <x>110</x>
+               <y>200</y>
+               <width>51</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">
+background-color:#181c1f;
+font: 9pt &quot;MS Shell Dlg 2&quot;;
+</string>
+             </property>
+             <property name="text">
+              <string>Like</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_42">
+             <property name="geometry">
+              <rect>
+               <x>40</x>
+               <y>170</y>
+               <width>47</width>
+               <height>13</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Likes :</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="Labellikespublic_popular">
+             <property name="geometry">
+              <rect>
+               <x>80</x>
+               <y>170</y>
+               <width>47</width>
+               <height>13</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>...</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_43">
+             <property name="geometry">
+              <rect>
+               <x>160</x>
+               <y>170</y>
+               <width>47</width>
+               <height>13</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>fecha :</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="labelfechapublic_popular">
+             <property name="geometry">
+              <rect>
+               <x>210</x>
+               <y>170</y>
+               <width>47</width>
+               <height>13</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>....</string>
+             </property>
+            </widget>
+            <widget class="QTextEdit" name="textEditPopulares">
+             <property name="geometry">
+              <rect>
+               <x>30</x>
+               <y>390</y>
+               <width>161</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color:#262626;</string>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QWidget" name="page_17"/>
+          </widget>
+          <widget class="QLineEdit" name="LEbuscar_Popular">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>60</y>
+             <width>241</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:white;</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="tab_3">
+          <attribute name="title">
+           <string>Recientes</string>
+          </attribute>
+          <widget class="QPushButton" name="pushButton_3">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>40</y>
+             <width>41</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Buscar</string>
+           </property>
+          </widget>
+          <widget class="QListWidget" name="LWanuncios_Recientes">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>130</y>
+             <width>281</width>
+             <height>351</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>241</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Poppins</family>
+             <pointsize>12</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/imagenes/imagenes/ujier (1).png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">
+QListWidget{
+color:white;
+background:#9c9c9c;
+border-radius:10px;
+}
+</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::Box</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Sunken</enum>
+           </property>
+           <property name="lineWidth">
+            <number>2</number>
+           </property>
+           <property name="midLineWidth">
+            <number>1</number>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+           <item>
+            <property name="text">
+             <string>New Item</string>
+            </property>
+            <property name="icon">
+             <iconset resource="imagenes.qrc">
+              <normaloff>:/imagenes/imagenes/ujier (1).png</normaloff>:/imagenes/imagenes/ujier (1).png</iconset>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>New Item</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>New Item</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>New Item</string>
+            </property>
+           </item>
+          </widget>
+          <widget class="QStackedWidget" name="stackedWidgetPublic_recientes">
+           <property name="geometry">
+            <rect>
+             <x>360</x>
+             <y>70</y>
+             <width>291</width>
+             <height>431</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">
+color:white;
+background-color:#7f7f7f;
+border-radius:10px;
+
+</string>
+           </property>
+           <property name="currentIndex">
+            <number>0</number>
+           </property>
+           <widget class="QWidget" name="page_18">
+            <widget class="QListWidget" name="LWcomentarios1_recientes">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>230</y>
+               <width>231</width>
+               <height>151</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>8</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">
+QListWidget{
+color:white;
+background:#333;
+border-radius:10px;
+}
+</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Sunken</enum>
+             </property>
+             <property name="lineWidth">
+              <number>2</number>
+             </property>
+             <property name="midLineWidth">
+              <number>1</number>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="BTNcomentar_recientes">
+             <property name="geometry">
+              <rect>
+               <x>190</x>
+               <y>400</y>
+               <width>51</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">
+background-color:#181c1f;
+font: 9pt &quot;MS Shell Dlg 2&quot;;
+</string>
+             </property>
+             <property name="text">
+              <string>Agre.</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="TEXTpublicstacked1_recientes">
+             <property name="geometry">
+              <rect>
+               <x>30</x>
+               <y>30</y>
+               <width>231</width>
+               <height>131</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Poppins</family>
+               <pointsize>10</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color:#3a677c;</string>
+             </property>
+             <property name="text">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="BTNpubliclike1_recientes">
+             <property name="geometry">
+              <rect>
+               <x>110</x>
+               <y>200</y>
+               <width>51</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">
+background-color:#181c1f;
+font: 9pt &quot;MS Shell Dlg 2&quot;;
+</string>
+             </property>
+             <property name="text">
+              <string>Like</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_44">
+             <property name="geometry">
+              <rect>
+               <x>40</x>
+               <y>170</y>
+               <width>47</width>
+               <height>13</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Likes :</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="Labellikespublic_recientes">
+             <property name="geometry">
+              <rect>
+               <x>80</x>
+               <y>170</y>
+               <width>47</width>
+               <height>13</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>...</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_45">
+             <property name="geometry">
+              <rect>
+               <x>140</x>
+               <y>170</y>
+               <width>47</width>
+               <height>13</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>fecha :</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="labelfechapublic_recientes">
+             <property name="geometry">
+              <rect>
+               <x>180</x>
+               <y>170</y>
+               <width>71</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>....</string>
+             </property>
+            </widget>
+            <widget class="QTextEdit" name="textEditcomentar_recientes">
+             <property name="geometry">
+              <rect>
+               <x>30</x>
+               <y>390</y>
+               <width>151</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color:#262626;</string>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QWidget" name="page_19"/>
+          </widget>
+          <widget class="QLabel" name="auxprobar">
+           <property name="geometry">
+            <rect>
+             <x>120</x>
+             <y>80</y>
+             <width>61</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="LEbuscarTitulo_Recientes">
+           <property name="geometry">
+            <rect>
+             <x>60</x>
+             <y>40</y>
+             <width>251</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:white;</string>
+           </property>
+          </widget>
+         </widget>
+        </widget>
+        <widget class="QLabel" name="Ltendencia">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>50</y>
+           <width>801</width>
+           <height>551</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="imagenes.qrc">:/imagenes/imagenes/tendencia.jpg</pixmap>
+         </property>
+        </widget>
+        <zorder>Ltendencia</zorder>
+        <zorder>tabWidget</zorder>
+       </widget>
+       <widget class="QWidget" name="page_5">
+        <widget class="QLabel" name="portadaamigo">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>20</y>
+           <width>811</width>
+           <height>191</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="imagenes.qrc">:/imagenes/imagenes/portada 2.jpg</pixmap>
+         </property>
+        </widget>
+        <widget class="QLabel" name="fotoamigo">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>130</y>
+           <width>201</width>
+           <height>141</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="imagenes.qrc">:/imagenes/imagenes/perfil2.jpg</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QStackedWidget" name="SWPerfilamigo">
+         <property name="geometry">
+          <rect>
+           <x>19</x>
+           <y>360</y>
+           <width>601</width>
+           <height>221</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(87, 87, 87);</string>
+         </property>
+         <property name="currentIndex">
+          <number>1</number>
+         </property>
+         <widget class="QWidget" name="page_12">
+          <widget class="QListWidget" name="LWanunciosamigos">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>10</y>
+             <width>431</width>
+             <height>201</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>Poppins</family>
+             <pointsize>12</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">
+QListWidget{
+color:white;
+background:#222;
+border-radius:10px;
+}
+</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::Box</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Sunken</enum>
+           </property>
+           <property name="lineWidth">
+            <number>2</number>
+           </property>
+           <property name="midLineWidth">
+            <number>1</number>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>6</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="page_13">
+          <widget class="QListWidget" name="LWamigosdeamigos">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>20</y>
+             <width>411</width>
+             <height>191</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Poppins</family>
+             <pointsize>12</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="autoFillBackground">
+            <bool>true</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QListWidget{
+color:white;
+background:#222;
+border-radius:10px;
+
+}
+
+</string>
+           </property>
+           <property name="sizeAdjustPolicy">
+            <enum>QAbstractScrollArea::AdjustIgnored</enum>
+           </property>
+           <property name="alternatingRowColors">
+            <bool>false</bool>
+           </property>
+           <property name="resizeMode">
+            <enum>QListView::Fixed</enum>
+           </property>
+           <property name="uniformItemSizes">
+            <bool>false</bool>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+           <property name="selectionRectVisible">
+            <bool>false</bool>
+           </property>
+           <property name="sortingEnabled">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="page_14">
+          <widget class="QListWidget" name="LWmejoresanuncios">
+           <property name="geometry">
+            <rect>
+             <x>80</x>
+             <y>10</y>
+             <width>421</width>
+             <height>201</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="font">
+            <font>
+             <family>Poppins</family>
+             <pointsize>12</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">
+QListWidget{
+color:white;
+background:#222;
+border-radius:10px;
+}
+</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::Box</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Sunken</enum>
+           </property>
+           <property name="lineWidth">
+            <number>2</number>
+           </property>
+           <property name="midLineWidth">
+            <number>1</number>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>6</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </widget>
+        </widget>
+        <widget class="QLabel" name="Lnombreamigo">
+         <property name="geometry">
+          <rect>
+           <x>260</x>
+           <y>230</y>
+           <width>121</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Poppins</family>
+           <pointsize>14</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="BTSeguiramigo">
+         <property name="geometry">
+          <rect>
+           <x>500</x>
+           <y>220</y>
+           <width>191</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Poppins</family>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+ border:0px solid rgb(25, 150, 150);
+color:white;
+background:#319;
+border-radius:10px;
+}
+QPushButton:hover{
+color:#333;
+border-radius:10px;
+background:rgb(197, 255, 238);
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Seguir</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="BTtoppublicacione">
+         <property name="geometry">
+          <rect>
+           <x>420</x>
+           <y>300</y>
+           <width>201</width>
+           <height>61</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Poppins</family>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+ border:0px solid rgb(208, 208, 208);
+color:white;
+background:#333;
+
+}
+QPushButton:hover{
+color:#333;
+background:white;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Mejor Publicaciones</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="BTAmigosdeamigos">
+         <property name="geometry">
+          <rect>
+           <x>220</x>
+           <y>300</y>
+           <width>201</width>
+           <height>61</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Poppins</family>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+ border:0px solid rgb(208, 208, 208);
+color:white;
+background:#333;
+
+}
+QPushButton:hover{
+color:#333;
+background:white;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Amigos</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="BTPublicacionesamigos">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>300</y>
+           <width>201</width>
+           <height>61</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Poppins</family>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+ border:0px solid rgb(208, 208, 208);
+color:white;
+background:#333;
+
+}
+QPushButton:hover{
+color:#333;
+background:white;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Publicaciones</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="Lcorreoamigo">
+         <property name="geometry">
+          <rect>
+           <x>260</x>
+           <y>250</y>
+           <width>221</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Poppins</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_6">
+         <property name="geometry">
+          <rect>
+           <x>660</x>
+           <y>280</y>
+           <width>201</width>
+           <height>301</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="imagenes.qrc">:/imagenes/imagenes/perfil3.jpg</pixmap>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+      <zorder>label_22</zorder>
+      <zorder>SWmostrar</zorder>
+      <zorder>LBnombre</zorder>
+      <zorder>LBcorreo</zorder>
+      <zorder>LBnumero</zorder>
+      <zorder>BTNINICIO</zorder>
+      <zorder>BTNPERFIL1</zorder>
+      <zorder>BTNPublicaciones1</zorder>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_5">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>20</y>
+        <width>1011</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGroupBox{
+color:white;
+background:#415688;
+border-radius:1px;
+}
+</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1085</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="imagenes.qrc"/>
+ </resources>
+ <connections/>
+</ui>
